@@ -30,7 +30,7 @@ export default function Header() {
         scrolled ? "bg-nonstop-black/90 backdrop-blur-md border-b border-white/5" : "bg-transparent"
       }`}
     >
-      <div className="container flex h-20 items-center justify-between px-4 md:px-6">
+      <div className="container flex h-20 items-center justify-between px-3 md:px-6">
         <Link href="/" className="flex items-center gap-2">
           <Image
             src="/images/whitelogoforblackbg.png"
