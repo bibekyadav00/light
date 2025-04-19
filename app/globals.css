@@ -1,0 +1,283 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 10%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 10%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 10%;
+    --primary: 221.2 83.2% 53.3%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 221.2 83.2% 53.3%;
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 0 0% 0%;
+    --foreground: 210 40% 98%;
+    --card: 0 0% 0%;
+    --card-foreground: 210 40% 98%;
+    --popover: 0 0% 0%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 217 91% 60%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 7%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 0 0% 7%;
+    --muted-foreground: 215 20% 65%;
+    --accent: 0 0% 7%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 0 0% 10%;
+    --input: 0 0% 10%;
+    --ring: 224 76% 48%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading font-bold;
+  }
+}
+
+@layer components {
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-[0_0_15px_rgba(59,130,246,0.5)] hover:-translate-y-1;
+  }
+
+  .btn-glow {
+    @apply relative overflow-hidden transition-all duration-300;
+  }
+
+  .btn-glow::after {
+    content: "";
+    @apply absolute top-0 left-0 w-full h-full bg-white opacity-0 transition-opacity duration-300;
+  }
+
+  .btn-glow:hover::after {
+    @apply opacity-20;
+  }
+
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-600 dark:from-blue-400 dark:to-blue-600;
+  }
+
+  .gradient-text-green {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-emerald-600 dark:from-green-400 dark:to-emerald-600;
+  }
+
+  .gradient-text-pink {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-pink-400 to-rose-600 dark:from-pink-400 dark:to-rose-600;
+  }
+
+  .gradient-text-orange {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-orange-400 to-amber-600 dark:from-orange-400 dark:to-amber-600;
+  }
+
+  .gradient-text-purple {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-violet-600 dark:from-purple-400 dark:to-violet-600;
+  }
+
+  .glass-card {
+    @apply bg-white/90 backdrop-blur-md border border-gray-200 dark:bg-black/40 dark:backdrop-blur-md dark:border-white/10;
+  }
+
+  .nav-link {
+    @apply relative text-gray-700 hover:text-black transition-colors duration-300 after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-600 after:transition-all after:duration-300 hover:after:w-full dark:text-gray-300 dark:hover:text-white;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-blue-600 dark:gradient-text;
+  }
+
+  .section-subtitle {
+    @apply text-lg md:text-xl text-gray-700 max-w-3xl mx-auto mb-12 dark:text-gray-300;
+  }
+
+  .article-tag {
+    @apply inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #3b82f6;
+  border-radius: 5px;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #1d4ed8;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3b82f6;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1d4ed8;
+}
+
+/* Animations */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Glowing effect */
+.glow-on-hover {
+  position: relative;
+  z-index: 1;
+}
+
+.glow-on-hover::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #3b82f6;
+  border-radius: inherit;
+  transform: scale(0.9);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.glow-on-hover:hover::before {
+  opacity: 0.3;
+  transform: scale(1.1);
+}
+
+/* Light mode styles */
+.light .bg-nonstop-black {
+  @apply bg-white;
+}
+
+.light .bg-nonstop-black\/95 {
+  @apply bg-gray-50;
+}
+
+.light .bg-nonstop-black\/90 {
+  @apply bg-white/90;
+}
+
+.light .bg-nonstop-black\/80 {
+  @apply bg-white/80;
+}
+
+.light .bg-black\/40 {
+  @apply bg-white/90;
+}
+
+.light .border-white\/10 {
+  @apply border-gray-200;
+}
+
+.light .border-white\/5 {
+  @apply border-gray-100;
+}
+
+.light .text-white {
+  @apply text-gray-900;
+}
+
+.light .text-gray-300 {
+  @apply text-gray-700;
+}
+
+.light .text-gray-400 {
+  @apply text-gray-600;
+}
+
+.light .hover\:text-white {
+  @apply hover:text-gray-900;
+}
+
+.light .hover\:bg-white\/10 {
+  @apply hover:bg-gray-100;
+}
+
+.light .hover\:bg-blue-900\/20 {
+  @apply hover:bg-blue-100;
+}
+
+.light .hover\:shadow-blue-500\/10 {
+  @apply hover:shadow-blue-200;
+}
+
+.light .hover\:shadow-green-500\/10 {
+  @apply hover:shadow-green-200;
+}
+
+.light .hover\:shadow-pink-500\/10 {
+  @apply hover:shadow-pink-200;
+}
+
+.light .hover\:shadow-orange-500\/10 {
+  @apply hover:shadow-orange-200;
+}
+
+/* Replace the problematic light mode gradient styles with direct CSS properties instead of @apply */
+
+.light .bg-gradient-to-b.from-nonstop-black\/80.to-nonstop-black {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), white);
+}
+
+.light .bg-gradient-to-b.from-nonstop-black.to-nonstop-black\/95 {
+  background: linear-gradient(to bottom, white, rgb(249, 250, 251));
+}
+
+.light .bg-gradient-to-b.from-nonstop-black\/95.to-nonstop-black {
+  background: linear-gradient(to bottom, rgb(249, 250, 251), white);
+}
+
+.light .mix-blend-luminosity {
+  @apply mix-blend-normal;
+}
