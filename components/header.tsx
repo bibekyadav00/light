@@ -36,7 +36,7 @@ export default function Header() {
             src="/images/whitelogoforblackbg.png"
             alt="Non-stop Logo"
             width={200}
-            height={60}
+            height={50}
             className="mix-blend-luminosity hover:mix-blend-normal transition-all duration-300"
           />
         </Link>

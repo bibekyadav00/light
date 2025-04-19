@@ -76,21 +76,7 @@ export default function Home() {
                 Empowering future engineers | BY NIT DURGAPUR Engineering undergrads. We offer personalized 1-to-1
                 sessions to JEE Mains/Advanced, NEET, CUCET aspirants.
               </p>
-              <div className="flex flex-col gap-3 sm:flex-row sm:gap-4">
-                <Button asChild className="bg-nonstop-blue hover:bg-nonstop-blue-dark btn-glow text-white">
-                  <Link href="#enroll">
-                    Enroll Now
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </Link>
-                </Button>
-                <Button
-                  variant="outline"
-                  asChild
-                  className="border-nonstop-blue text-nonstop-blue hover:bg-nonstop-blue/10"
-                >
-                  <Link href="/about">Learn More</Link>
-                </Button>
-              </div>
+              
             </div>
             <div className="mx-auto lg:ml-auto animate-on-scroll">
               <div className="relative">
@@ -105,6 +91,21 @@ export default function Home() {
                     priority
                   />
                 </div>
+              </div>
+              <div className="flex flex-col gap-3 sm:flex-row sm:gap-4">
+                <Button asChild className="bg-nonstop-blue hover:bg-nonstop-blue-dark btn-glow text-white">
+                  <Link href="#enroll">
+                    Enroll Now
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </Link>
+                </Button>
+                <Button
+                  variant="outline"
+                  asChild
+                  className="border-nonstop-blue text-nonstop-blue hover:bg-nonstop-blue/10"
+                >
+                  <Link href="/about">Learn More</Link>
+                </Button>
               </div>
             </div>
           </div>
