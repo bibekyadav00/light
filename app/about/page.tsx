@@ -234,8 +234,8 @@ export default function AboutPage() {
                     <Image
                       src="/images/team/bibek.png"
                       alt="Bibek Yadav"
-                      width={300}
-                      height={300}
+                      width={500}
+                      height={500}
                       className="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-105 rounded-xl"
                     />
                   </div>

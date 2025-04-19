@@ -76,22 +76,6 @@ export default function Home() {
                 Empowering future engineers | BY NIT DURGAPUR Engineering undergrads. We offer personalized 1-to-1
                 sessions to JEE Mains/Advanced, NEET, CUCET aspirants.
               </p>
-              
-            </div>
-            <div className="mx-auto lg:ml-auto animate-on-scroll">
-              <div className="relative">
-                <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-2xl blur-xl opacity-20 animate-pulse-slow"></div>
-                <div className="relative bg-black/40 backdrop-blur-sm border border-white/10 rounded-2xl p-6 shadow-xl animate-float">
-                  <Image
-                    src="/images/nonstop-flyer.png"
-                    alt="Non-stop Flyer"
-                    width={600}
-                    height={400}
-                    className="rounded-xl shadow-lg hover:shadow-blue-500/20 transition-all duration-500 hover:scale-[1.02]"
-                    priority
-                  />
-                </div>
-              </div>
               <div className="flex flex-col gap-3 sm:flex-row sm:gap-4">
                 <Button asChild className="bg-nonstop-blue hover:bg-nonstop-blue-dark btn-glow text-white">
                   <Link href="#enroll">
@@ -106,6 +90,21 @@ export default function Home() {
                 >
                   <Link href="/about">Learn More</Link>
                 </Button>
+              </div>
+            </div>
+            <div className="mx-auto lg:ml-auto animate-on-scroll">
+              <div className="relative">
+                <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-2xl blur-xl opacity-20 animate-pulse-slow"></div>
+                <div className="relative bg-black/40 backdrop-blur-sm border border-white/10 rounded-2xl p-6 shadow-xl animate-float">
+                  <Image
+                    src="/images/nonstop-flyer.png"
+                    alt="Non-stop Flyer"
+                    width={600}
+                    height={400}
+                    className="rounded-xl shadow-lg hover:shadow-blue-500/20 transition-all duration-500 hover:scale-[1.02]"
+                    priority
+                  />
+                </div>
               </div>
             </div>
           </div>
