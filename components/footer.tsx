@@ -58,6 +58,9 @@ export default function Footer() {
             <a href="https://wa.me/918945828056" className="text-gray-400 hover:text-nonstop-green transition-colors">
               +91 8945828056
             </a>
+            <a href="/about" className="text-gray-400 hover:text-nonstop-blue transition-colors">
+              Developer: Bibek Yadav
+            </a>
             <div className="flex gap-4 mt-2">
               <Link
                 href="https://www.facebook.com/share/1JGrWnQons/?mibextid=wwXIfr"
