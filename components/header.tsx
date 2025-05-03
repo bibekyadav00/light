@@ -41,9 +41,9 @@ export default function Header() {
           />
         </Link>
         <nav className="hidden md:flex gap-8">
-          <Link href="/" className="nav-link">
+          {/* <Link href="/" className="nav-link">
             Home
-          </Link>
+          </Link> */}
           <Link href="/about" className="nav-link">
             About
           </Link>

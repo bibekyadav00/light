@@ -125,7 +125,7 @@ export default function AboutPage() {
                 <div className="relative p-6 md:p-8 flex flex-col md:flex-row gap-8 items-center">
                   <div className="overflow-hidden rounded-xl w-full md:w-1/3 max-w-[300px]">
                     <Image
-                      src="/images/team/aman.png"
+                      src="/images/team/aman.jpg"
                       alt="Aman Singh Rathore"
                       width={300}
                       height={300}
@@ -245,10 +245,12 @@ export default function AboutPage() {
                       Operations Head
                     </div>
                     <p className="text-gray-300 mb-4">
-                      B.Tech in Computer Science Engineering from NIT Durgapur. Bibek oversees the operational aspects
-                      of Non-stop, ensuring smooth functioning of all programs and coordinating between students and
-                      teachers. His technical expertise helps in implementing innovative teaching methodologies and
-                      digital solutions.
+                    B.Tech in Computer Science Engineering from NIT Durgapur. Bibek leverages his strong 
+                    technical background to enhance the operational efficiency of Non-stop. With a sharp 
+                    focus on process optimization and innovative solutions, he ensures smooth execution 
+                    of all operational activities. Bibek's management fosters a culture of teamwork and 
+                    continuous improvement, empowering teams to collaborate effectively and deliver 
+                    exceptional experiences for both students and educators.
                     </p>
                     {/* <p className="text-gray-400">
                       "Our goal is to create a seamless learning experience for students, where they can focus entirely
@@ -259,8 +261,12 @@ export default function AboutPage() {
               </div>
             </div>
           </div>
+
+
           <div className="animate-on-scroll">
-            <h3 className="text-2xl md:text-3xl font-bold gradient-text-red text-center mb-8">Marketing</h3>
+            <h3 className="text-2xl md:text-3xl font-bold gradient-text-red text-center mb-8">Marketing
+              
+            </h3>
             <div className="group">
               <div className="relative overflow-hidden rounded-xl border border-white/10 bg-black/40 backdrop-blur-sm transition-all duration-300 hover:shadow-lg hover:shadow-red-500/10 hover:-translate-y-1">
                 <div className="absolute inset-0 bg-gradient-to-br from-red-900/20 to-transparent opacity-0 group-hover:opacity-20 transition-opacity duration-300 rounded-xl"></div>

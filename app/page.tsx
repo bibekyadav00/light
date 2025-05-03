@@ -73,7 +73,7 @@ export default function Home() {
               </h1>
               <h2 className="text-xl md:text-2xl lg:text-3xl font-medium text-white">Where Learning Never Ends</h2>
               <p className="max-w-[600px] text-gray-300 md:text-xl">
-                Empowering future engineers | BY NIT DURGAPUR Engineering undergrads. We offer personalized 1-to-1
+                Empowering curious minds | BY NIT DURGAPUR Engineering undergrads. We offer personalized 1-to-1
                 sessions to JEE Mains/Advanced, NEET, CUCET aspirants.
               </p>
               <div className="flex flex-col gap-3 sm:flex-row sm:gap-4">
