@@ -70,13 +70,13 @@ export default function Header() {
             </SheetTrigger>
             <SheetContent side="right" className="bg-nonstop-black border-white/5">
               <nav className="flex flex-col gap-6 mt-12">
-                <Link
+                {/* <Link
                   href="/"
                   className="text-lg font-medium text-gray-300 hover:text-white transition-colors"
                   onClick={() => setIsOpen(false)}
                 >
                   Home
-                </Link>
+                </Link> */}
                 <Link
                   href="/about"
                   className="text-lg font-medium text-gray-300 hover:text-white transition-colors"
