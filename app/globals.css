@@ -47,22 +47,16 @@
     --input: 0 0% 10%;
     --ring: 224 76% 48%;
   }
-}
 
-@layer base {
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
+  h1, h2, h3, h4, h5, h6 {
     @apply font-heading font-bold;
   }
 }
@@ -105,6 +99,10 @@
     @apply bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-violet-600 dark:from-purple-400 dark:to-violet-600;
   }
 
+  .gradient-text-red {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-red-400 to-rose-600 dark:from-red-400 dark:to-rose-600;
+  }
+
   .glass-card {
     @apply bg-white/90 backdrop-blur-md border border-gray-200 dark:bg-black/40 dark:backdrop-blur-md dark:border-white/10;
   }
@@ -126,7 +124,13 @@
   }
 }
 
-/* Custom scrollbar */
+.light .gradient-text-red {
+  background-image: linear-gradient(to right, #f87171, #fb7185);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Scrollbars */
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -264,20 +268,4 @@
   @apply hover:shadow-orange-200;
 }
 
-/* Replace the problematic light mode gradient styles with direct CSS properties instead of @apply */
-
-.light .bg-gradient-to-b.from-nonstop-black\/80.to-nonstop-black {
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), white);
-}
-
-.light .bg-gradient-to-b.from-nonstop-black.to-nonstop-black\/95 {
-  background: linear-gradient(to bottom, white, rgb(249, 250, 251));
-}
-
-.light .bg-gradient-to-b.from-nonstop-black\/95.to-nonstop-black {
-  background: linear-gradient(to bottom, rgb(249, 250, 251), white);
-}
-
-.light .mix-blend-luminosity {
-  @apply mix-blend-normal;
-}
+.light .bg-gradient-to

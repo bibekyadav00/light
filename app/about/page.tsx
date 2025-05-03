@@ -267,7 +267,7 @@ export default function AboutPage() {
       <div className="relative p-6 md:p-8 flex flex-col md:flex-row gap-8 items-center">
         <div className="overflow-hidden rounded-xl w-full md:w-1/3 max-w-[300px]">
           <Image
-            src="/images/team/azad.png"
+            src="/images/team/azad.jpeg"
             alt="Azad Singh"
             width={500}
             height={500}
