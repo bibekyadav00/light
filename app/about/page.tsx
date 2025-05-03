@@ -133,7 +133,7 @@ export default function AboutPage() {
                     />
                   </div>
                   <div className="w-full md:w-2/3 text-center md:text-left">
-                    <h4 className="text-2xl font-bold text-white mb-2">Aman Singh Rathore</h4>
+                    <h4 className="text-2xl font-bold text-white mb-2">Aman Kumar Singh</h4>
                     <div className="inline-flex items-center rounded-full px-3 py-1 text-sm font-medium bg-green-500/20 text-green-400 border border-green-500/30 mb-4">
                       Physics Specialist
                     </div>
@@ -142,10 +142,10 @@ export default function AboutPage() {
                       qualified JEE Advanced and has a deep understanding of Physics concepts. His teaching methodology
                       focuses on building strong fundamentals and problem-solving skills.
                     </p>
-                    <p className="text-gray-400">
+                    {/* <p className="text-gray-400">
                       "Physics is not just about formulas, it's about understanding the world around us. I aim to make
                       Physics intuitive and enjoyable for my students."
-                    </p>
+                    </p> */}
                   </div>
                 </div>
               </div>
@@ -177,10 +177,10 @@ export default function AboutPage() {
                       Joyeb has a knack for simplifying complex chemical concepts and making them accessible to
                       students. His teaching approach combines theoretical knowledge with practical applications.
                     </p>
-                    <p className="text-gray-400">
+                    {/* <p className="text-gray-400">
                       "Chemistry is the central science that connects physics with biology. I help students see these
                       connections and develop a holistic understanding of the subject."
-                    </p>
+                    </p> */}
                   </div>
                 </div>
               </div>
@@ -214,10 +214,10 @@ export default function AboutPage() {
                       excels in breaking down complex mathematical problems into simple, understandable steps. His
                       teaching style emphasizes conceptual clarity and systematic problem-solving techniques.
                     </p>
-                    <p className="text-gray-400">
+                    {/* <p className="text-gray-400">
                       "Mathematics is not about numbers, equations, or algorithms; it's about understanding patterns and
                       logical thinking. I strive to develop these skills in my students."
-                    </p>
+                    </p> */}
                   </div>
                 </div>
               </div>
@@ -250,50 +250,49 @@ export default function AboutPage() {
                       teachers. His technical expertise helps in implementing innovative teaching methodologies and
                       digital solutions.
                     </p>
-                    <p className="text-gray-400">
+                    {/* <p className="text-gray-400">
                       "Our goal is to create a seamless learning experience for students, where they can focus entirely
                       on their studies while we take care of everything else."
-                    </p>
+                    </p> */}
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <div className="animate-on-scroll">
-  <h3 className="text-2xl md:text-3xl font-bold gradient-text-red text-center mb-8">Marketing</h3>
-  <div className="group">
-    <div className="relative overflow-hidden rounded-xl border border-white/10 bg-black/40 backdrop-blur-sm transition-all duration-300 hover:shadow-lg hover:shadow-red-500/10 hover:-translate-y-1">
-      <div className="absolute inset-0 bg-gradient-to-br from-red-900/20 to-transparent opacity-0 group-hover:opacity-20 transition-opacity duration-300 rounded-xl"></div>
-      <div className="relative p-6 md:p-8 flex flex-col md:flex-row gap-8 items-center">
-        <div className="overflow-hidden rounded-xl w-full md:w-1/3 max-w-[300px]">
-          <Image
-            src="/images/team/azad.jpeg"
-            alt="Azad Singh"
-            width={500}
-            height={500}
-            className="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-105 rounded-xl"
-          />
-        </div>
-        <div className="w-full md:w-2/3 text-center md:text-left">
-          <h4 className="text-2xl font-bold text-white mb-2">Azad Singh</h4>
-          <div className="inline-flex items-center rounded-full px-3 py-1 text-sm font-medium bg-red-500/20 text-red-400 border border-red-500/30 mb-4">
-            Marketing Head
-          </div>
-          <p className="text-gray-300 mb-4">
-            B.Tech in Computer Science Engineering from NIT Durgapur. Azad oversees the marketing aspects
-            of Non-stop, ensuring smooth functioning of all programs and coordinating between students and
-            teachers. His technical expertise helps in implementing innovative teaching methodologies and
-            digital solutions.
-          </p>
-          <p className="text-gray-400">
+            <h3 className="text-2xl md:text-3xl font-bold gradient-text-red text-center mb-8">Marketing</h3>
+            <div className="group">
+              <div className="relative overflow-hidden rounded-xl border border-white/10 bg-black/40 backdrop-blur-sm transition-all duration-300 hover:shadow-lg hover:shadow-red-500/10 hover:-translate-y-1">
+                <div className="absolute inset-0 bg-gradient-to-br from-red-900/20 to-transparent opacity-0 group-hover:opacity-20 transition-opacity duration-300 rounded-xl"></div>
+                <div className="relative p-6 md:p-8 flex flex-col md:flex-row gap-8 items-center">
+                  <div className="overflow-hidden rounded-xl w-full md:w-1/3 max-w-[300px]">
+                    <Image
+                      src="/images/team/azad.jpeg"
+                      alt="Azad Singh"
+                      width={500}
+                      height={500}
+                      className="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-105 rounded-xl"
+                    />
+                  </div>
+                  <div className="w-full md:w-2/3 text-center md:text-left">
+                    <h4 className="text-2xl font-bold text-white mb-2">Azad Singh</h4>
+                    <div className="inline-flex items-center rounded-full px-3 py-1 text-sm font-medium bg-red-500/20 text-red-400 border border-red-500/30 mb-4">
+                      Marketing Head
+                    </div>
+                    <p className="text-gray-300 mb-4">
+                      B.Tech in Computer Science Engineering from NIT Durgapur. With a deep understanding of audience behavior and digital trends, 
+                      Azad crafts compelling campaigns that resonate with students and educators alike. He ensures that the brand message is clear,
+                      consistent, and engaging across all platforms, contributing to Non-stop's growing presence and community trust.
+                    </p>
+                    {/* <p className="text-gray-400">
             "Our goal is to create a seamless learning experience for students, where they can focus entirely
             on their studies while we take care of everything else."
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+          </p> */}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
         </div>
       </section>

@@ -268,4 +268,18 @@
   @apply hover:shadow-orange-200;
 }
 
-.light .bg-gradient-to
+.light .bg-gradient-to-b.from-nonstop-black\/80.to-nonstop-black {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), white);
+}
+
+.light .bg-gradient-to-b.from-nonstop-black.to-nonstop-black\/95 {
+  background: linear-gradient(to bottom, white, rgb(249, 250, 251));
+}
+
+.light .bg-gradient-to-b.from-nonstop-black\/95.to-nonstop-black {
+  background: linear-gradient(to bottom, rgb(249, 250, 251), white);
+}
+
+.light .mix-blend-luminosity {
+  @apply mix-blend-normal;
+}
