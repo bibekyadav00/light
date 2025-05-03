@@ -259,6 +259,42 @@ export default function AboutPage() {
               </div>
             </div>
           </div>
+          
+          <div className="animate-on-scroll">
+            <h3 className="text-2xl md:text-3xl font-bold gradient-text-orange text-center mb-8">Operations</h3>
+            <div className="group">
+              <div className="relative overflow-hidden rounded-xl border border-white/10 bg-black/40 backdrop-blur-sm transition-all duration-300 hover:shadow-lg hover:shadow-orange-500/10 hover:-translate-y-1">
+                <div className="absolute inset-0 bg-gradient-to-br from-orange-900/20 to-transparent opacity-0 group-hover:opacity-20 transition-opacity duration-300 rounded-xl"></div>
+                <div className="relative p-6 md:p-8 flex flex-col md:flex-row gap-8 items-center">
+                  <div className="overflow-hidden rounded-xl w-full md:w-1/3 max-w-[300px]">
+                    <Image
+                      src="/images/team/bibek.png"
+                      alt="Bibek Yadav"
+                      width={500}
+                      height={500}
+                      className="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-105 rounded-xl"
+                    />
+                  </div>
+                  <div className="w-full md:w-2/3 text-center md:text-left">
+                    <h4 className="text-2xl font-bold text-white mb-2">Bibek Yadav</h4>
+                    <div className="inline-flex items-center rounded-full px-3 py-1 text-sm font-medium bg-orange-500/20 text-orange-400 border border-orange-500/30 mb-4">
+                      Operations Head
+                    </div>
+                    <p className="text-gray-300 mb-4">
+                      B.Tech in Computer Science Engineering from NIT Durgapur. Bibek oversees the operational aspects
+                      of Non-stop, ensuring smooth functioning of all programs and coordinating between students and
+                      teachers. His technical expertise helps in implementing innovative teaching methodologies and
+                      digital solutions.
+                    </p>
+                    <p className="text-gray-400">
+                      "Our goal is to create a seamless learning experience for students, where they can focus entirely
+                      on their studies while we take care of everything else."
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
