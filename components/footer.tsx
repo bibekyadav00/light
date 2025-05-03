@@ -103,7 +103,7 @@ export default function Footer() {
                 <span className="sr-only">Telegram</span>
               </Link>
               <Link
-                href="#"
+                href="https://www.youtube.com/@NONSTOPwlne"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-red-500 transition-colors"
