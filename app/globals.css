@@ -62,10 +62,12 @@
 }
 
 @layer components {
+  /* Card Hover Effect */
   .card-hover {
     @apply transition-all duration-300 hover:shadow-[0_0_15px_rgba(59,130,246,0.5)] hover:-translate-y-1;
   }
 
+  /* Button Glow Effect */
   .btn-glow {
     @apply relative overflow-hidden transition-all duration-300;
   }
@@ -79,7 +81,12 @@
     @apply opacity-20;
   }
 
+  /* Gradient Text Styles */
   .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-600 dark:from-blue-400 dark:to-blue-600;
+  }
+
+  .gradient-text-blue {
     @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-600 dark:from-blue-400 dark:to-blue-600;
   }
 
@@ -103,22 +110,27 @@
     @apply bg-clip-text text-transparent bg-gradient-to-r from-red-400 to-rose-600 dark:from-red-400 dark:to-rose-600;
   }
 
+  /* Glass Effect for Cards */
   .glass-card {
     @apply bg-white/90 backdrop-blur-md border border-gray-200 dark:bg-black/40 dark:backdrop-blur-md dark:border-white/10;
   }
 
+  /* Navigation Links */
   .nav-link {
     @apply relative text-gray-700 hover:text-black transition-colors duration-300 after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-600 after:transition-all after:duration-300 hover:after:w-full dark:text-gray-300 dark:hover:text-white;
   }
 
+  /* Section Titles */
   .section-title {
     @apply text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-blue-600 dark:gradient-text;
   }
 
+  /* Section Subtitle */
   .section-subtitle {
     @apply text-lg md:text-xl text-gray-700 max-w-3xl mx-auto mb-12 dark:text-gray-300;
   }
 
+  /* Article Tag */
   .article-tag {
     @apply inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors;
   }
@@ -126,6 +138,12 @@
 
 .light .gradient-text-red {
   background-image: linear-gradient(to right, #f87171, #fb7185);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.light .gradient-text-blue {
+  background-image: linear-gradient(to right, #60a5fa, #2563eb);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -173,7 +191,7 @@
   transform: translateY(0);
 }
 
-/* Glowing effect */
+/* Glowing Effect */
 .glow-on-hover {
   position: relative;
   z-index: 1;
@@ -199,7 +217,7 @@
   transform: scale(1.1);
 }
 
-/* Light mode styles */
+/* Light Mode Styles */
 .light .bg-nonstop-black {
   @apply bg-white;
 }

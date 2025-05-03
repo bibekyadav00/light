@@ -246,9 +246,7 @@ export default function AboutPage() {
                     </div>
                     <p className="text-gray-300 mb-4">
                     B.Tech in Computer Science Engineering from NIT Durgapur. Bibek leverages his strong 
-                    technical background to enhance the operational efficiency of Non-stop. With a sharp 
-                    focus on process optimization and innovative solutions, he ensures smooth execution 
-                    of all operational activities. Bibek's management fosters a culture of teamwork and 
+                    technical background to enhance the operational efficiency of Non-stop. Bibek's management fosters a culture of teamwork and 
                     continuous improvement, empowering teams to collaborate effectively and deliver 
                     exceptional experiences for both students and educators.
                     </p>
@@ -265,7 +263,7 @@ export default function AboutPage() {
 
           <div className="animate-on-scroll">
             <h3 className="text-2xl md:text-3xl font-bold gradient-text-red text-center mb-8">Marketing
-              
+
             </h3>
             <div className="group">
               <div className="relative overflow-hidden rounded-xl border border-white/10 bg-black/40 backdrop-blur-sm transition-all duration-300 hover:shadow-lg hover:shadow-red-500/10 hover:-translate-y-1">
